@@ -2,10 +2,10 @@
 
 Migration Lock Timeout is a Ruby gem that adds a lock timeout to all Active
 Record migrations in your Ruby on Rails project. A lock timeout sets a timeout
-on how long PostgreSQL will wait to acquire a lock on tables being altered
+on how long PostgreSQL/MySQL/MariaDB will wait to acquire a lock on tables being altered
 before failing and rolling back. This prevents migrations from creating
 additional lock contention that can take down your site when it's under heavy
-load. Migration Lock Timeout currently only supports [PostgreSQL](https://www.postgresql.org/)
+load. Migration Lock Timeout currently only supports [PostgreSQL](https://www.postgresql.org/), [MySQL](https://www.mysql.com/), [MariaDB](https://mariadb.org/)
 
 ## Installation
 
